@@ -4,7 +4,7 @@ const socketio = require("socket.io");
 const path = require("path");
 
 const app = express();
-
+//creates an own http server internally
 const server = http.createServer(app);
 const io = socketio(server);
 app.set("view engine", "ejs");
